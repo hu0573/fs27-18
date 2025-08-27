@@ -1,1 +1,68 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #e6edf3;
+  background-color: #0e1116;
+}
+
+.site-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  width: main(1000px, 92vw);
+  margin: 0 auto 64px;
+  display: grid;
+  gap: 1rem;
+}
+.container .card {
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+}
+.container .card .form .row {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 820px) {
+  .container .card .form .row {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+}
+.container .card .form .row label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: bold;
+}
+.container .card .form .row input,
+.container .card .form .row select {
+  background-color: #0b0f14;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e6edf3;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  outline: none;
+}
+.container .card .form .row input:focus,
+.container .card .form .row select:focus {
+  border-color: #2ea043;
+}
+.container .card .form .row .btn {
+  border: none;
+  background-color: #2ea043;
+  color: #071a0a;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .card .form .row .btn.ghost {
+  background-color: transparent;
+  color: #e6edf3;
+  border: 1px solid rgba(46, 160, 67, 0.5);
+}/*# sourceMappingURL=styles.css.map */
