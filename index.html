@@ -39,6 +39,7 @@
                 name="amount"
                 required
                 placeholder="0.00"
+                step="0.01"
             /></label>
 
             <label for="date"
@@ -47,8 +48,10 @@
           </div>
 
           <div class="row">
-            <button class="btn">Add</button>
-            <button class="btn ghost">Load Initial Data</button>
+            <button class="btn" type="submit">Add</button>
+            <button class="btn ghost" id="load" type="button">
+              Load Initial Data
+            </button>
           </div>
         </form>
       </section>
